@@ -60,34 +60,55 @@
       </ul>
     </section>
 
+    <section id="Contact">
+      <form aria-labelledby="contact-form">
+        <h2 id="contact form">Contact Us</h2>
+
+        <label for="name">Name <span aria-hidden="true"></span> </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          aria-required="true"
+        />
+
+        <label for="email">Email <span aria-hidden="true"></span></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-required="true"
+        />
+
+        <label for="cubject">Subject:</label>
+        <input type="text" id="subject" name="subject" />
+
+        <label for="message">Message <span aria-hidden="true"></span></label>
+        <textarea
+          name="message"
+          id="message"
+          rows="5"
+          required
+          aria-required="true"
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
     <footer role="contentinfo" aria-label="footer information">
       <p>1234 Street Name</p>
       <p>City Name, State 000000</p>
-      <p>Email:<br /><a href="mailto:support@example.com">support@example.com</a></p>
+      <p>
+        Email:<br /><a href="mailto:support@example.com">support@example.com</a>
+      </p>
       <p>Phone:<br />+1 123 456 7890</p>
       <a href="https://www.instagram.com/" aria-label="instagram">Instagram</a>
       <a href="https://www.facebook.com/" aria-label="facebook">Facebook</a>
       <a href="https://www.youtube.com/" aria-label="youtube">Youtube</a>
       <h4>&copy; 2025 My Website. All rights reserved</h4>
     </footer>
-    <section id="Contact">
-        <form aria-labelledby="contact-form">
-            <h2 id="contact form"> Contact Us</h2>
-
-            <label for="name">Name <span aria-hidden="true"></span> </label>
-            <input type="text" id="name" name="name" required aria-required="true">
-
-            <label for="email">Email <span aria-hidden="true"></span></label>
-            <input type="email" id="email" name="email" required aria-required="true">
-
-            <label for="cubject">Subject:</label>
-            <input type="text" id="subject" name="subject">
-
-            <label for="message">Message <span aria-hidden="true"></span></label>
-            <textarea name="message" id="message" rows="5" required aria-required="true"></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
   </body>
 </html>
